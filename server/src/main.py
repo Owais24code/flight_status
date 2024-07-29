@@ -82,14 +82,12 @@ def home():
 @app.route("/flight", methods=["GET"])
 def get_flight():
     ticket_id = request.args.get('ticket_id')
-    flight_num = request.args.get('flight_num')
     
     if ticket_id:
         flight = FlishStatus.query.filter_by(ticket_id=ticket_id).first()
-    elif flight_num:
-        flight = FlishStatus.query.filter_by(flight_num=flight_num).first()
+   
     else:
-        return jsonify({"error": "Please provide ticket_id or flight_num"}), 400
+        return jsonify({"error": "Please provide ticket_id "}), 400
 
     if flight:
         return jsonify({
