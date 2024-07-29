@@ -2,6 +2,9 @@
 
 FlightStatus is a web application that provides real-time updates on flight statuses. The project is built using Vite for the frontend with React, a Python Flask application for the backend, and a PostgreSQL database. The entire backend setup can be run using Docker Compose.
 
+![image](https://github.com/user-attachments/assets/ccbe1ef6-4021-40fa-9e3a-9f6efb59ed58)
+
+
 ## Features
 
 - Real-time flight status updates
